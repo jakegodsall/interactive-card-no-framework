@@ -1,3 +1,41 @@
 .container__form {
 	background-color: #fff;
+	padding: 5rem 1rem;
+
+	input,
+	button {
+		padding: 0.6rem;
+		border-radius: 5px;
+	}
+
+	button {
+		background-color: #000;
+		color: #fff;
+		font-size: 1rem;
+	}
+
+	&-row {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+
+		label,
+		legend {
+			text-transform: uppercase;
+		}
+
+		.third-row {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.date-input {
+			width: 20%;
+		}
+	}
+}
+
+.third-row {
+	display: flex;
+	width: auto;
 }

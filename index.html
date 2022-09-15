@@ -57,23 +57,27 @@
 							placeholder="e.g. 1234 5678 9123 0000"
 						/>
 					</div>
-					<div class="container__form-row">
+					<div class="container__form-row third-row">
 						<fieldset>
 							<legend>exp. date (mm/yy)</legend>
-							<label for="expiry-month"></label>
-							<input
-								type="text"
-								name="expiry-month"
-								id="expiry-month"
-								placeholder="MM"
-							/>
-							<label for="expiry-year"></label>
-							<input
-								type="text"
-								name="expiry-year"
-								id="expiry-year"
-								placeholder="YY"
-							/>
+							<div class="exp-row">
+								<label for="expiry-month"></label>
+								<input
+									class="date-input"
+									type="text"
+									name="expiry-month"
+									id="expiry-month"
+									placeholder="MM"
+								/>
+								<label for="expiry-year"></label>
+								<input
+									class="date-input"
+									type="text"
+									name="expiry-year"
+									id="expiry-year"
+									placeholder="YY"
+								/>
+							</div>
 						</fieldset>
 						<label for="cvc">cvc</label>
 						<input
@@ -83,7 +87,9 @@
 							placeholder="e.g. 123"
 						/>
 					</div>
-					<button type="submit">Confirm</button>
+					<div class="container__form-row">
+						<button type="submit">Confirm</button>
+					</div>
 				</form>
 			</div>
 		</div>
