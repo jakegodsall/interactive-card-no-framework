@@ -8,34 +8,56 @@
 		border-radius: 5px;
 	}
 
+	input {
+		border: 1px solid var(--light-grey-violet);
+	}
+
 	button {
+		margin-top: 0.5rem;
 		background-color: #000;
 		color: #fff;
 		font-size: 1rem;
+		border: 0;
 	}
 
 	&-row {
 		margin-top: 1rem;
 		display: flex;
 		flex-direction: column;
-
-		label,
-		legend {
-			text-transform: uppercase;
-		}
-
-		.third-row {
-			display: flex;
-			flex-direction: row;
-		}
-
-		.date-input {
-			width: 20%;
-		}
 	}
+}
+
+label,
+legend {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
 }
 
 .third-row {
 	display: flex;
 	width: auto;
+	flex-direction: row;
+
+	fieldset {
+		display: inline;
+	}
+
+	.date-input {
+		width: 20%;
+	}
+
+	.cvc-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.exp-row {
+		display: flex;
+
+		.date-input {
+			flex: 1;
+			margin-right: 10px;
+		}
+	}
 }
